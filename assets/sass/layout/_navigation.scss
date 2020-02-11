@@ -1,0 +1,29 @@
+.nav__color{
+    background-color: $white;
+}
+
+.nav__logus{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav__logo{
+    font-family: $fuenteprimaria;
+    font-weight: $bold;
+    font-size: $xx-large;
+    position: absolute;
+}
+
+.nav__logo-in{
+    font-family: $fuenteprimaria;
+    font-size: $x-small;
+    position: absolute;
+    left: 47px;
+    bottom:-8px;
+}
+
+.nav__li-a{
+    font-family: $fuenteprimaria;
+    font-weight: $regular;
+    font-size: $medium;
+}

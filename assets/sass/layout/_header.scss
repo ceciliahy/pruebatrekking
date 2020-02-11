@@ -1,0 +1,23 @@
+.herosection{
+    background-image: url(../img/bg-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: right; /*right*/
+    margin: auto;
+    height: 1000px;
+    width: 100vw;
+    
+}
+
+.encabezado{
+    margin-top: 30px;
+    padding: 20px;
+}
+
+
+@media (min-width:768px){
+    .herosection{
+        background-size: cover;
+        height:300px;
+    }
+}

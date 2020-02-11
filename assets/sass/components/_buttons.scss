@@ -1,5 +1,20 @@
-button{
-    color: blue;
-    padding: 20 px;
+.boton__activo{
+    background-color: $ballblue;
+    color:#fff;
+    border: 0;
+}
+
+.boton__inactivo{
+    background-color: $white;
+    border: 0;
+}
+
+@media (min-width: 992px){
+    .botones{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
+    }
 }
