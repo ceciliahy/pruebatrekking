@@ -1,3 +1,38 @@
+.contenedor{
+  /*width:100vw; no poner altura que se adapte al contenido*/
+  background-image: url(../img/bg-price.svg);
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-size: 180%;*/
+  background-size: 2000px;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  justify-content: center;
+  
+  @media(min-width: 768px){
+    background-position: center;
+    background-size: cover;
+  }
+
+ /* width: 100%;
+height: 100%;*/
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+/*color: $white*/
+   
+ 
+   /* 
+
+    margin: auto;
+
+
 /*col SMARTPHONE*/
 .col-12 {
     grid-column: span 12    /*el ultm vao no necesita ;*/
@@ -39,9 +74,9 @@
 /*MEDIAQUERY*/
 
 @media (min-width: 576px) {
-    .contenedor{
+    /*.contenedor{
       width: 540px;
-      background-color: orange;}}
+     /* background-color: orange;}*/}
 
     .d-sm-none{
         display: none;
@@ -88,9 +123,12 @@
     } 
 
 @media (min-width: 768px) {
-    .contenedor {
-      width: 750px;
-      background-color: brown;}
+    /*  .contenedor {
+        width: 100vw;
+    width: 750px;*/
+  /*     background-color: brown;}*/
+    
+
     
     .d-md-none{
         display: none;
@@ -142,10 +180,10 @@
     
   
   @media (min-width: 992px) {
-    .contenedor {
-      width: 970px;    /*mantiene el ultimo color designado*/
+    /*.contenedor {
+      width: 970px;    /*mantiene el ultimo color designado
       background-color: green;
-    }
+    }*/
     .d-lg-none{
         display: none;
     }
@@ -192,10 +230,10 @@
   
     @media (min-width: 1200px) {
 
-        .contenedor {
-            width: 1170px;    /*mantiene el ultimo color designado*/
-            background-color: blue;
-          }
+        /*.contenedor {
+            width: 1170px;    /*mantiene el ultimo color designado
+            background-color: blue;}*/
+          
         .d-xl-none{
             display: none;
         }

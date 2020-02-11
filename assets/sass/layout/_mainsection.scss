@@ -1,9 +1,71 @@
 main{
-    padding: 0px 20px;
+    padding: 0px 50px 30px 50px;
     h2{
     text-align: center;
     }
-    .texto{
-        text-align: left;
+    .img__grafic{
+        width: 260px;
+        height: 200px;
+    } 
+}
+
+.animation-element{     /*estado inicial*/
+    opacity: 0;
+    transition: all 500ms linear;
+    transform: translate 3d(0px, 20px, 0px);/*mueve en 3 coordenadas*/
+    transition-delay:2s;
+    position: relative;
+}
+
+.animation-element.in-view{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.contenedor h2{
+    color:$white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*contenedor*/
+.precios{
+    margin:30px;
+}
+.primer__card{
+ background-color: $white;
+ border: none;
+ width: 270px;
+ height: 330px;
+ padding: 20px;
+}
+
+.segunda__card{
+    background-color: $white;
+    border: none;
+    width: 270px;
+    height: 330px;
+    padding: 20px;
+    margin-top: 20px;
+   }
+   
+
+@media(min-width:776px){
+    .graficos{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .texto__grafic{
+     width: 50%;
+    }
+
+    .segunda__card{
+        margin-top: 0px;
+    }
+
+    .precios{
+        display: flex;
+        justify-content: space-around;
     }
 }

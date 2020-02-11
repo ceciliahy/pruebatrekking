@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css"> <!--escribir bien la ruta ya que es relativa-->
 </head>
 
-
+<body>
 <nav id="luxbar" class="luxbar-fixed">
     <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
     <div class="luxbar-menu luxbar-menu-right luxbar-menu-light nav__color">
@@ -53,31 +53,65 @@
 
 <main>
     <h2>Características</h2>
-    <img>
-    <div class="texto">
+    <div class="graficos">
+    <div class="animation-element">
+    <img class=img__grafic src="assets/img/bar-graph.svg" alt="grafico de precios">
+</div>
+    <div class="texto__grafic">
         <h4>Estadísticas de tu progreso</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nisi libero repudiandae numquam qui veniam accusamus similique sequi incidunt explicabo, quis sapiente dolor deleniti omnis soluta distinctio doloribus, corrupti error!</p>
+    
     </div>
+    </div>
+   
 
 </main>
 
-<section class="precios"></section>
+<section class=" contenedor">
+    <h2>Precios</h2>
+    <div class="precios row">
+        <div class="primer__card col-12 col-md-6">
+            <h4>Trekk-in Free</h4>
+            <h1>$0/mes</h1>
+            <hr>
+            <ul>
+                <li>Ver mapas creado por usuarios</li>  
+                <li>Concretar con otros usuarios</li>
+            </ul>
+            <hr>
+            <button class="boton__free" type="button ">Obtén Free</button>
+        </div>
 
-<footer class="footer">
-    <div class="notaizq">
-     <h5>Legal</h5> <h5>Cookies</h5> <h5>Sobre anuncios</h5>
+        <div class="segunda__card col-12 col-md-6">
+            <h4>Trekk-in Premium</h4>
+            <h1>$3500/mes</h1>
+            <hr>
+            <ul>
+                <li>Ver mapas creado por usuarios</li>  
+                <li>Concretar con otros usuarios</li>
+                <li>Definir mejores rutas</li>  
+                <li>Mapas Offline</li>
+                <li>Integración con otras aplicaciones</li>
+            </ul>
+            <hr>
+            <button class="boton__free" type="button ">Obtén Free</button>
+        </div>
     </div>
-    <div class="notader">
-     <h5>@2018 Trekk-in SPA</h5>
-    </div>
+</section>
+
+<footer>
+    <ul>
+        <li>Legal</li>
+        <li>Cookies</li> 
+        <li>Sobre anuncios</li>
+    </ul>
+    <h5>@2018 Trekk-in SPA</h5>
 </footer>
-<!--
-<footer id="contacto" class= "fondo">
-    <a href="https://github.com"><i class="fab fa-github fa-3x"></i></a>
-    <a href="https://twitter.com"><i class="fab fa-twitter-square fa-3x"></i></a>
-    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-3x"></i></a>
-    <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>
-    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-3x"></i></a>
 
-    <p>Meet & Coffe 2018. Todos los derechos reservados</p>
-</footer-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/animate.js">
+    </script>
+
+</body>

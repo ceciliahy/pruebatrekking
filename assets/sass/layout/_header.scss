@@ -1,11 +1,14 @@
 .herosection{
     background-image: url(../img/bg-hero.svg);
     background-repeat: no-repeat;
-    background-size: 160%;
-    background-position: right; /*right*/
+    background-size: 800px;
+    background-position-x: -400px;
+    background-position-y: 230px; 
+   /* right; /*right*/
+
     margin: auto;
-    height: 1000px;
-    width: 100vw;
+    height: 750px;
+    
     
 }
 
@@ -17,7 +20,18 @@
 
 @media (min-width:768px){
     .herosection{
+        background-position: center;
         background-size: cover;
-        height:300px;
+        /*position:right;*/
+       /* background-position-x: 10px;
+        background-position-y: 30px; 
+        height: 1000px;
+        width: 100%;
+       /* height:300px;*/
+
+       .encabezado{
+           width: 30%;
+           margin-left: 100px;
+       }
     }
 }
