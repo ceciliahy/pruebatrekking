@@ -1,5 +1,11 @@
 .boton__activo{
     background-color: $normal-state;
+    font-family: $fuenteprimaria;
+    font-weight: $regular;
+    font-size: $medium;
+    padding:5px;
+    margin:10px 5px 0px 20px;
+
     &:hover {
         background-color: $hover-state;
     }
@@ -12,6 +18,12 @@
 
 .boton__inactivo{
     background-color: $white;
+    font-family: $fuenteprimaria;
+    font-weight: $regular;
+    font-size: $medium;
+       padding:5px;
+    margin:10px 5px 0px 20px;
+
     &:hover {
         background-color: $hover-state;
     }
@@ -39,12 +51,9 @@
         background-color: $focus-state;
     }
 }
-@media (min-width: 992px){
-    .botones{
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    }
+@media (min-width: 768px){
+   .boton__inactivo{
+    margin:10px 5px 0px 550px;
+   }
+
 }

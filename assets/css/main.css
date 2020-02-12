@@ -59,14 +59,14 @@ p {
 .nav__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 40px;
   position: absolute; }
 
 .nav__logo-in {
   font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   position: absolute;
-  left: 47px;
+  left: 50px;
   bottom: -12px; }
 
 .nav__li-a {
@@ -505,6 +505,11 @@ color: $gray;*/ }
 }*/
 .boton__activo {
   background-color: #2ab7ca;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px;
+  margin: 10px 5px 0px 20px;
   color: #fff;
   border: 0; }
   .boton__activo:hover {
@@ -514,6 +519,11 @@ color: $gray;*/ }
 
 .boton__inactivo {
   background-color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px;
+  margin: 10px 5px 0px 20px;
   border: 0; }
   .boton__inactivo:hover {
     background-color: #77d1dd; }
@@ -535,11 +545,8 @@ color: $gray;*/ }
   .boton__free:focus {
     background-color: #b1e4eb; }
 
-@media (min-width: 992px) {
-  .botones {
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; } }
+@media (min-width: 768px) {
+  .boton__inactivo {
+    margin: 10px 5px 0px 550px; } }
 
 /*# sourceMappingURL=main.css.map */
