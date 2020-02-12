@@ -10,11 +10,12 @@
 </head>
 
 <body>
-<nav id="luxbar" class="luxbar-fixed">
+
+<nav id="luxbar" class="luxbar-fixed  nav__shadow">
     <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
     <div class="luxbar-menu luxbar-menu-right luxbar-menu-light nav__color">
         <ul class="luxbar-navigation">
-            <li class="luxbar-header">
+            <li class="luxbar-header ">
                 <!--<a href="#" class="luxbar-brand">LUXBAR</a>-->
             <div class="nav__logus">
                     <a class="luxbar-brand nav__logo" href="#">T</a>
@@ -23,11 +24,13 @@
                 <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
                 id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
-            <li class="luxbar-item nav__li-a"><a href="#">Acerca de</a></li>
+            
+            <li class="luxbar-item nav__li-a"><a href="#acercade">Acerca de</a></li>
 
-            <li class="luxbar-item nav__li-a"><a href="#">Características</a></li>
+            <li class="luxbar-item nav__li-a"><a href="#caracteristicas">Características</a></li>
 
-            <li class="luxbar-item nav__li-a"><a href="#">Precios</a></li>
+            <li class="luxbar-item nav__li-a"><a href="#precios">Precios</a></li>
+            
         </ul>
         <div class="botones">
             <button class="boton__inactivo" type="button ">Iniciar sesión</button>
@@ -37,21 +40,15 @@
 </nav>
 
 <header> <!--herosection adentro 3 divs foto titulo y otro-->
-    <div class="herosection">
+    <div id= "acercade" class="herosection">
         <div class="encabezado">
             <h1>Haz Trekking sin Parar</h1>
             <p>Con Trekk-in te despreocuparás de la estimación de tu viaje,ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición</p>
         </div>
     </div>
-
-   <!-- <div class="encabezado">
-        <h1>Haz trekking sin parar</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui voluptatibus aliquid quae non rerum facere voluptatem pariatur? Ipsam ullam libero nam quas impedit veniam asperiores aperiam dolores consequatur doloremque?</p>
-    </div>
-    <div class="herosection"></div>-->
 </header>
 
-<main>
+<main id="caracteristicas">
     <h2>Características</h2>
     <div class="graficos">
     <div class="animation-element">
@@ -67,23 +64,23 @@
 
 </main>
 
-<section class=" contenedor">
+<section id="precios"class=" contenedor">
     <h2>Precios</h2>
     <div class="precios row">
         <div class="primer__card col-12 col-md-6">
-            <h4>Trekk-in Free</h4>
+            <h3>Trekk-in Free</h3>
             <h1>$0/mes</h1>
             <hr>
             <ul>
                 <li>Ver mapas creado por usuarios</li>  
                 <li>Concretar con otros usuarios</li>
             </ul>
-            <hr>
+            <hr class="linea__abajo">
             <button class="boton__free" type="button ">Obtén Free</button>
         </div>
 
         <div class="segunda__card col-12 col-md-6">
-            <h4>Trekk-in Premium</h4>
+            <h3>Trekk-in Premium</h3>
             <h1>$3500/mes</h1>
             <hr>
             <ul>
@@ -93,7 +90,7 @@
                 <li>Mapas Offline</li>
                 <li>Integración con otras aplicaciones</li>
             </ul>
-            <hr>
+            <hr class="linea__abajo">
             <button class="boton__free" type="button ">Obtén Free</button>
         </div>
     </div>

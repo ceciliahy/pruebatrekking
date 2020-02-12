@@ -1,7 +1,7 @@
 main{
     padding: 0px 50px 30px 50px;
     h2{
-    text-align: center;
+         text-align: center;
     }
     .img__grafic{
         width: 260px;
@@ -30,42 +30,68 @@ main{
 
 /*contenedor*/
 .precios{
-    margin:30px;
+    margin:20px;
+    ul{
+        font-family: $fuentesecundaria;
+        font-weight: $regular;
+        font-size: $small;
+        line-height:30px;
+        }
+    h1{
+       margin-top:3px;
+       margin-bottom:20px;
+        }
+    hr{
+        border:none;
+        height:1px;
+        color:$gray;
+        background-color:$gray;
+        }
+}
+.linea__abajo{
+        margin-bottom: 20px;
+
 }
 .primer__card{
- background-color: $white;
- border: none;
- width: 270px;
- height: 330px;
- padding: 20px;
+    background-color: $white;
+    border: none;
+    width: 270px;
+    height: 400px;
+    padding: 0px 30px;
+    .linea__abajo{
+        margin-top:104px;
+        margin-bottom:20px;
+    }
+
 }
 
 .segunda__card{
     background-color: $white;
     border: none;
     width: 270px;
-    height: 330px;
-    padding: 20px;
+    height: 400px;
+    padding: 0px 30px;
     margin-top: 20px;
+   
    }
    
-
 @media(min-width:776px){
     .graficos{
         display: flex;
         justify-content: space-around;
     }
-
-    .texto__grafic{
-     width: 50%;
-    }
-
-    .segunda__card{
-        margin-top: 0px;
-    }
-
     .precios{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        
+    }
+    .texto__grafic{
+         width: 50%;
+    }
+    .primer__card{
+        margin:0px 0px 0px 260px;
+    }
+    .segunda__card{
+        margin:0px 0px 0px 30px;
     }
 }

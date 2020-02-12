@@ -1,14 +1,44 @@
 .boton__activo{
-    background-color: $ballblue;
-    color:#fff;
+    background-color: $normal-state;
+    &:hover {
+        background-color: $hover-state;
+    }
+    &:focus {
+        background-color: $focus-state;
+    }
+    color:$white;
     border: 0;
 }
 
 .boton__inactivo{
     background-color: $white;
+    &:hover {
+        background-color: $hover-state;
+    }
+    &:focus {
+        background-color: $focus-state;
+    }
     border: 0;
 }
 
+.boton__free{
+    border: 0;
+    width:100%;
+    height:40px;
+    margin-bottom: 50px;
+    background-color: $normal-state;
+    color:$white;
+    font-family: $fuentesecundaria;
+    font-weight: $regular;
+    font-size: $small;
+    
+    &:hover {
+        background-color: $hover-state;
+    }
+    &:focus {
+        background-color: $focus-state;
+    }
+}
 @media (min-width: 992px){
     .botones{
     display: block;
